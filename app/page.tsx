@@ -40,65 +40,60 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-primary pb-32 pt-20 lg:pb-40 lg:pt-32">
-        {/* Abstract curved shapes */}
-        <div className="absolute inset-0 overflow-hidden">
-          {/* Large curved shape - top right */}
-          <svg
-            className="absolute -right-20 -top-20 h-[500px] w-[600px] opacity-20 lg:h-[700px] lg:w-[800px]"
-            viewBox="0 0 800 700"
+        {/* Three diagonal wavy lines from top-right to bottom-left */}
+        <svg
+          className="absolute inset-0 h-full w-full"
+          viewBox="0 0 1200 600"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          {/* Line 1 - Top */}
+          <path
+            d="M1300 -50 Q1000 100 800 150 Q600 200 400 250 Q200 300 0 200"
+            stroke="white"
+            strokeWidth="3"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M800 0C800 0 650 150 500 200C350 250 200 180 100 300C0 420 50 550 150 650C250 750 450 700 600 600C750 500 800 350 800 200V0Z"
-              fill="currentColor"
-              className="text-white"
-            />
-          </svg>
-          {/* Medium curved shape - bottom left */}
-          <svg
-            className="absolute -bottom-10 -left-20 h-[400px] w-[500px] opacity-15 lg:h-[500px] lg:w-[600px]"
-            viewBox="0 0 600 500"
+            opacity="0.3"
+          />
+          {/* Line 2 - Middle */}
+          <path
+            d="M1350 50 Q1050 200 850 280 Q650 360 450 380 Q250 400 -50 350"
+            stroke="white"
+            strokeWidth="2.5"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 500C0 500 100 350 200 300C300 250 400 320 500 200C600 80 550 0 450 0C350 0 200 50 100 150C0 250 0 350 0 500Z"
-              fill="currentColor"
-              className="text-white"
-            />
-          </svg>
-          {/* Small accent shape - center */}
-          <svg
-            className="absolute left-1/2 top-1/3 h-[200px] w-[300px] -translate-x-1/2 opacity-10 lg:h-[300px] lg:w-[400px]"
-            viewBox="0 0 400 300"
+            opacity="0.2"
+          />
+          {/* Line 3 - Bottom */}
+          <path
+            d="M1400 180 Q1100 350 900 420 Q700 490 500 520 Q300 550 -100 500"
+            stroke="white"
+            strokeWidth="2"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <ellipse cx="200" cy="150" rx="200" ry="100" fill="currentColor" className="text-secondary" />
-          </svg>
-        </div>
+            opacity="0.15"
+          />
+        </svg>
 
         <div className="relative mx-auto max-w-7xl px-4 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl lg:text-6xl">
+            <h1 className="font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-white drop-shadow-sm sm:text-5xl lg:text-6xl">
               <span className="text-balance">FADEPA Pinturería</span>
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-primary-foreground/90 sm:text-xl">
+            <p className="mt-6 text-lg font-medium leading-relaxed text-white sm:text-xl">
               Soluciones en pinturas, revestimientos y productos para el hogar y la industria
             </p>
-            <p className="mt-4 text-base leading-relaxed text-primary-foreground/80">
+            <p className="mt-4 text-base font-normal leading-relaxed text-white/90">
               En FADEPA encontrás una amplia gama de productos de pintura, revestimientos, aditivos y soluciones para pintura con excelente atención al cliente en Alta Gracia y alrededores.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link href="/productos">
-                <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90">
                   Ver productos
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/contacto">
-                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+                <Button size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white/10">
                   Contactanos
                 </Button>
               </Link>
@@ -200,12 +195,12 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <Button size="lg" className="bg-primary text-white hover:bg-primary/90">
                   Escribinos por WhatsApp
                 </Button>
               </Link>
               <Link href="/contacto">
-                <Button size="lg" variant="outline" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10">
+                <Button size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white/10">
                   Ver información de contacto
                 </Button>
               </Link>
