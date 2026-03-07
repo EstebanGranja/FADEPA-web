@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-primary pb-32 pt-20 lg:pb-40 lg:pt-32">
+      <section className="relative overflow-hidden bg-primary pb-32 pt-16 lg:pb-40 lg:pt-24">
         {/* Three diagonal wavy lines from top-right to bottom-left */}
         <svg
           className="absolute inset-0 h-full w-full"
