@@ -17,16 +17,16 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-primary">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
+    <header className="sticky top-0 z-50 w-full bg-[#1a8a84]">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8 lg:py-5">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <Image
               src="/images/fadepa-logo.jpg"
               alt="FADEPA Pinturas"
-              width={140}
-              height={50}
-              className="h-10 w-auto lg:h-12"
+              width={180}
+              height={64}
+              className="h-14 w-auto lg:h-16"
               priority
             />
           </Link>
@@ -70,7 +70,7 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="lg:hidden">
           <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
-          <div className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-primary px-6 py-6 shadow-lg">
+          <div className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-[#1a8a84] px-6 py-6 shadow-lg">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
                 <Image
