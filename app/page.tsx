@@ -39,12 +39,47 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-primary py-20 lg:py-32">
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-primary-foreground/10 blur-3xl" />
-          <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-secondary/20 blur-3xl" />
+      <section className="relative overflow-hidden bg-primary pb-32 pt-20 lg:pb-40 lg:pt-32">
+        {/* Abstract curved shapes */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Large curved shape - top right */}
+          <svg
+            className="absolute -right-20 -top-20 h-[500px] w-[600px] opacity-20 lg:h-[700px] lg:w-[800px]"
+            viewBox="0 0 800 700"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M800 0C800 0 650 150 500 200C350 250 200 180 100 300C0 420 50 550 150 650C250 750 450 700 600 600C750 500 800 350 800 200V0Z"
+              fill="currentColor"
+              className="text-white"
+            />
+          </svg>
+          {/* Medium curved shape - bottom left */}
+          <svg
+            className="absolute -bottom-10 -left-20 h-[400px] w-[500px] opacity-15 lg:h-[500px] lg:w-[600px]"
+            viewBox="0 0 600 500"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 500C0 500 100 350 200 300C300 250 400 320 500 200C600 80 550 0 450 0C350 0 200 50 100 150C0 250 0 350 0 500Z"
+              fill="currentColor"
+              className="text-white"
+            />
+          </svg>
+          {/* Small accent shape - center */}
+          <svg
+            className="absolute left-1/2 top-1/3 h-[200px] w-[300px] -translate-x-1/2 opacity-10 lg:h-[300px] lg:w-[400px]"
+            viewBox="0 0 400 300"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse cx="200" cy="150" rx="200" ry="100" fill="currentColor" className="text-secondary" />
+          </svg>
         </div>
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+
+        <div className="relative mx-auto max-w-7xl px-4 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl lg:text-6xl">
               <span className="text-balance">FADEPA Pinturería</span>
@@ -69,6 +104,22 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
+
+        {/* Bottom wave transition */}
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg
+            className="w-full"
+            viewBox="0 0 1440 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0 120L48 108C96 96 192 72 288 60C384 48 480 48 576 54C672 60 768 72 864 78C960 84 1056 84 1152 78C1248 72 1344 60 1392 54L1440 48V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0Z"
+              className="fill-background"
+            />
+          </svg>
         </div>
       </section>
 
