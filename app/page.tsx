@@ -39,31 +39,31 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-muted/50 to-background py-20 lg:py-32">
+      <section className="relative overflow-hidden bg-primary py-20 lg:py-32">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
-          <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
+          <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-primary-foreground/10 blur-3xl" />
+          <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-secondary/20 blur-3xl" />
         </div>
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl lg:text-6xl">
               <span className="text-balance">FADEPA Pinturería</span>
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-muted-foreground sm:text-xl">
+            <p className="mt-6 text-lg leading-relaxed text-primary-foreground/90 sm:text-xl">
               Soluciones en pinturas, revestimientos y productos para el hogar y la industria
             </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            <p className="mt-4 text-base leading-relaxed text-primary-foreground/80">
               En FADEPA encontrás una amplia gama de productos de pintura, revestimientos, aditivos y soluciones para pintura con excelente atención al cliente en Alta Gracia y alrededores.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link href="/productos">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
                   Ver productos
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/contacto">
-                <Button size="lg" variant="outline">
+                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
                   Contactanos
                 </Button>
               </Link>
@@ -136,15 +136,11 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="relative overflow-hidden rounded-2xl bg-foreground px-8 py-16 text-center lg:px-16">
-            <div className="absolute inset-0 -z-10">
-              <div className="absolute right-1/4 top-0 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
-              <div className="absolute bottom-0 left-1/4 h-64 w-64 rounded-full bg-accent/20 blur-3xl" />
-            </div>
-            <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-background sm:text-4xl">
+          <div className="relative overflow-hidden rounded-2xl bg-secondary px-8 py-16 text-center lg:px-16">
+            <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-secondary-foreground sm:text-4xl">
               ¿Tenés un proyecto en mente?
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-background/80">
+            <p className="mx-auto mt-4 max-w-xl text-secondary-foreground/80">
               Contactanos y te ayudamos a encontrar los productos perfectos para tu obra. Ofrecemos asesoramiento personalizado.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -158,7 +154,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/contacto">
-                <Button size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
+                <Button size="lg" variant="outline" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10">
                   Ver información de contacto
                 </Button>
               </Link>

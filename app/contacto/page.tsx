@@ -165,11 +165,11 @@ export default function ContactoPage() {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-16 rounded-2xl bg-muted/30 p-8 text-center lg:p-12">
-          <h2 className="font-[family-name:var(--font-display)] text-xl font-bold text-foreground">
+        <div className="mt-16 rounded-2xl bg-primary p-8 text-center lg:p-12">
+          <h2 className="font-[family-name:var(--font-display)] text-xl font-bold text-primary-foreground">
             ¿Necesitás asesoramiento?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
             Nuestro equipo está capacitado para ayudarte a elegir los productos ideales para tu proyecto. No dudes en consultarnos sobre colores, rendimientos, aplicaciones y más.
           </p>
           <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -178,13 +178,13 @@ export default function ContactoPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
                 <MessageCircle className="mr-2 h-4 w-4" />
                 Consultar por WhatsApp
               </Button>
             </Link>
             <Link href="tel:+543535657327">
-              <Button variant="outline">
+              <Button variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
                 <Phone className="mr-2 h-4 w-4" />
                 Llamar ahora
               </Button>

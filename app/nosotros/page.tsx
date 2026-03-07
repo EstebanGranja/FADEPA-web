@@ -66,11 +66,12 @@ export default function NosotrosPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 via-accent/10 to-muted">
+              <div className="aspect-square overflow-hidden rounded-2xl bg-primary">
                 <div className="flex h-full items-center justify-center">
                   <div className="text-center">
-                    <span className="font-[family-name:var(--font-display)] text-6xl font-bold text-primary">FADEPA</span>
-                    <p className="mt-2 text-muted-foreground">Alta Gracia, Córdoba</p>
+                    <span className="font-[family-name:var(--font-display)] text-6xl font-bold text-primary-foreground">FADEPA</span>
+                    <span className="block text-lg tracking-widest text-primary-foreground/80">PINTURAS</span>
+                    <p className="mt-4 text-primary-foreground/70">Alta Gracia, Córdoba</p>
                   </div>
                 </div>
               </div>
@@ -107,27 +108,27 @@ export default function NosotrosPage() {
       </section>
 
       {/* Mission Section */}
-      <section className="bg-foreground py-16 lg:py-24">
+      <section className="bg-secondary py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight text-background sm:text-3xl">
+            <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight text-secondary-foreground sm:text-3xl">
               Nuestra Misión
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-background/80">
+            <p className="mt-6 text-lg leading-relaxed text-secondary-foreground/80">
               Brindar a nuestros clientes las mejores soluciones en pinturas y revestimientos, combinando productos de calidad superior con un asesoramiento experto y una atención cercana que nos distingue.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-8">
               <div className="text-center">
                 <span className="font-[family-name:var(--font-display)] text-4xl font-bold text-primary">+500</span>
-                <p className="mt-1 text-sm text-background/70">Productos disponibles</p>
+                <p className="mt-1 text-sm text-secondary-foreground/70">Productos disponibles</p>
               </div>
               <div className="text-center">
                 <span className="font-[family-name:var(--font-display)] text-4xl font-bold text-primary">17</span>
-                <p className="mt-1 text-sm text-background/70">Categorías</p>
+                <p className="mt-1 text-sm text-secondary-foreground/70">Categorías</p>
               </div>
               <div className="text-center">
                 <span className="font-[family-name:var(--font-display)] text-4xl font-bold text-primary">+1000</span>
-                <p className="mt-1 text-sm text-background/70">Clientes satisfechos</p>
+                <p className="mt-1 text-sm text-secondary-foreground/70">Clientes satisfechos</p>
               </div>
             </div>
           </div>
