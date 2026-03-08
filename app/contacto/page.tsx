@@ -85,8 +85,8 @@ export default function ContactoPage() {
 
         {/* Contact Cards */}
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {contactInfo.map((item) => (
-            <Card key={item.title} className="border-border bg-card">
+            {contactInfo.map((item) => (
+              <Card key={item.title} className="border-border bg-card transition-all hover:shadow-md hover:-translate-y-1 overflow-hidden animate-in fade-in-0 slide-in-from-bottom-4 duration-300">
               <CardHeader className="pb-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                   <item.icon className="h-6 w-6 text-primary" />
@@ -161,34 +161,6 @@ export default function ContactoPage() {
               title="Ubicación de FADEPA Pinturería"
               className="w-full"
             />
-          </div>
-        </div>
-
-        {/* Additional Info */}
-        <div className="mt-16 rounded-2xl bg-primary p-8 text-center lg:p-12">
-          <h2 className="font-[family-name:var(--font-display)] text-xl font-bold text-primary-foreground">
-            ¿Necesitás asesoramiento?
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Nuestro equipo está capacitado para ayudarte a elegir los productos ideales para tu proyecto. No dudes en consultarnos sobre colores, rendimientos, aplicaciones y más.
-          </p>
-          <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link
-              href="https://wa.me/543535657327"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
-                <MessageCircle className="mr-2 h-4 w-4" />
-                Consultar por WhatsApp
-              </Button>
-            </Link>
-            <Link href="tel:+543535657327">
-              <Button variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                <Phone className="mr-2 h-4 w-4" />
-                Llamar ahora
-              </Button>
-            </Link>
           </div>
         </div>
       </div>
