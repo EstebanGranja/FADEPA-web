@@ -1,0 +1,344 @@
+[
+  {
+    "id": "latizador",
+    "nombre": "Latizador",
+    "categoria": "aditivos",
+    "descripcion_corta": "Fijador para pintura a la cal",
+    "descripcion_larga": "Es una dispersión acuosa de un polímero de alta calidad que agregado a la pintura a la cal mejora su viscosidad evitando el descuelgue, mejorando la adherencia y disminuyendo el entizado.",
+    "ficha_tecnica": "",
+    "imagen": "/products/aditivos/LATIZADOR.jpeg"
+  },
+  {
+    "id": "antihongo",
+    "nombre": "Antihongo - Antialga Concentrado",
+    "categoria": "aditivos",
+    "descripcion_corta": "Previene la aparición de hongos y algas en superficies pintadas",
+    "descripcion_larga": "Es un producto especialmente desarrollado para garantizar efectiva protección de film seco en revestimientos internos y externos contra el ataque microbiológico de algas, hongos y levaduras. Está exento de formaldehído, fenoles y metales pesados como el Mercurio y el Plomo. Posee excelente compatibilidad y estabilidad a rayos UV, no causando amarillamiento de la pintura.",
+    "ficha_tecnica": "",
+    "imagen": "/products/aditivos/ANTIHONGO.jpeg"
+  },
+  {
+    "id": "mateante",
+    "nombre": "Mateante para Esmaltes Sintéticos y Barnices",
+    "categoria": "aditivos",
+    "descripcion_corta": "Reduce el brillo de esmaltes y barnices",
+    "descripcion_larga": "Aditivo para esmaltes y barnices brillantes a base de ceras de poliester en solvente; que disminuye el brillo.",
+    "ficha_tecnica": "",
+    "imagen": "/products/aditivos/MATEANTE.jpeg"
+  },
+  {
+    "id": "latex-interior",
+    "nombre": "Profesional Interior",
+    "categoria": "latex",
+    "descripcion_corta": "Pintura económica para interiores de alto rendimiento",
+    "descripcion_larga": "Pintura elaborada a base de polímeros en dispersión acuosa que contiene dióxido de titanio como pigmento. Formulada para ser utilizada en paredes de revoque tradicional en interiores.",
+    "ficha_tecnica": "",
+    "imagen": "/products/latex/PROF INTERIOR.jpeg"
+  },
+  {
+    "id": "latex-exterior",
+    "nombre": "Cielorraso",
+    "categoria": "latex",
+    "descripcion_corta": "Pintura especialmente formulada para cielorrasos",
+    "descripcion_larga": "Producto a base de polímeros en dispersión acuosa, que contiene antihongo de efecto residual y dióxido de titanio como pigmento. Ideal para obtener resultados óptimos en el pintado de cielo rasos",
+    "ficha_tecnica": "",
+    "imagen": "/products/latex/CIELORRASOS.jpeg"
+  },
+  {
+    "id": "latex-satinado",
+    "nombre": "Premium Satinado Int-Ext",
+    "categoria": "latex",
+    "descripcion_corta": "Acabado satinado para interiores y exteriores",
+    "descripcion_larga": "Pintura de buen poder cubritivo elaborada a base de polímeros acrílicos en dispersión acuosa, que proporciona un recubrimiento elastomérico de acabado Satinado, super lavable. Formulada especialmente para decorar e impermeabilizar paredes interiores y exteriores.",
+    "ficha_tecnica": "",
+    "imagen": "/products/latex/SATINADO.jpeg"
+  },
+  {
+    "id": "cal-apagada",
+    "nombre": "Pintura a la Cal en Pasta",
+    "categoria": "pintura_cal",
+    "descripcion_corta": "Producto en suspensión acuosa fácil de diluir, a base de Hidróxido de Calcio con altos contenidos de Hidróxido de Magnesio y pigmentos de primera calidad. Está indicada para decorar paredes nuevas, revoques finos o gruesos, que no hayan sido curados con otros recubrimientos.",
+    "descripcion_larga": "Producto en suspensión acuosa fácil de diluir, a base de Hidróxido de Calcio con altos contenidos de Hidróxido de Magnesio y pigmentos de primera calidad. Está indicada para decorar paredes nuevas, revoques finos o gruesos, que no hayan sido curados con otros recubrimientos.",
+    "ficha_tecnica": "",
+    "imagen": "/products/pintura_cal/PINT. A LA CAL.jpg"
+  },
+  {
+    "id": "membrana-liquida",
+    "nombre": "Membrana en Pasta Poliuretánica",
+    "categoria": "impermeabilizantes",
+    "descripcion_corta": "Recubrimiento impermeabilizante flexible y duradero",
+    "descripcion_larga": "Recubrimiento elaborado a base de poliuretano en dispersión acuosa, que proporciona un recubrimiento muy impermeable y transitable. Protección de larga vida útil al poseer la tecnología poliuretánica. Formulada especialmente para impermeabilizar techos con una inclinación adecuada (mayor del 1%). Producto ATERMICO. Es de fácil aplicación sobre lozas, revoques, ladrillos, etc.; gracias a sus promotores de adhesión y a su máxima resistencia al ensuciamiento.",
+    "ficha_tecnica": "",
+    "imagen": "/products/impermeabilizantes/MEMB. POLIURETANICA.jpeg"
+  },
+  {
+    "id": "hidrofugo",
+    "nombre": "Frentes y muros",
+    "categoria": "impermeabilizantes",
+    "descripcion_corta": "Pintura impermeabilizante para fachadas y muros",
+    "descripcion_larga": "Pintura de buen poder cubritivo elaborada a base de polímeros acrílicos en dispersión acuosa, que proporciona un recubrimiento elastomérico de acabado aterciopelado. Formulada especialmente para decorar e impermeabilizar paredes exteriores.",
+    "ficha_tecnica": "",
+    "imagen": "/products/impermeabilizantes/FRENTE Y MURO.jpeg"
+  },
+  {
+    "id": "esmalte-sintetico",
+    "nombre": "Esmalte Sintético Brillante",
+    "categoria": "esmaltes",
+    "descripcion_corta": "Alto brillo y durabilidad para metales y maderas",
+    "descripcion_larga": "Esmalte sintético elaborado con resinas sintéticas del tipo 'Alkyd' y pigmentos de alta calidad. Su composición asegura gran resistencia a la intemperie, la abrasión, el manoseo y los lavados. Su color depende de la pigmentación del esmalte. Ideal para pintar objetos a los que quiera dar la máxima protección y el más perfecto acabado.",
+    "ficha_tecnica": "",
+    "imagen": "/products/esmaltes/ESMALTE SINT .jpeg"
+  },
+  {
+    "id": "esmalte-mate",
+    "nombre": "Esmalte Sintético Mate",
+    "categoria": "esmaltes",
+    "descripcion_corta": "Acabado mate elegante para interiores",
+    "descripcion_larga": "Esmalte sintético elaborado con resinas sintéticas del tipo 'Alkyd' y pigmentos de alta calidad. Su composición asegura gran resistencia a la intemperie, la abrasión, el manoseo y los lavados. Su color depende de la pigmentación del esmalte. Ideal para pintar objetos a los que quiera dar la máxima protección y el más perfecto acabado.",
+    "ficha_tecnica": "",
+    "imagen": "/products/esmaltes/ESMALTE BCO MATE.jpeg"
+  },
+  {
+    "id": "esmalte-agua",
+    "nombre": "Esmalte al Agua",
+    "categoria": "esmaltes",
+    "descripcion_corta": "Secado rápido y bajo olor",
+    "descripcion_larga": "Esmalte sintético elaborado con resinas acrílicas acuosas y pigmentos de alta calidad. Su composición asegura gran resistencia a la intemperie, la abrasión, el manoseo y los lavados. Su color depende de la pigmentación del esmalte. Ideal para pintar objetos a los que quiera dar máxima protección y el más perfecto acabado.",
+    "ficha_tecnica": "",
+    "imagen": "/products/esmaltes/ESMALTE AGUA.jpeg"
+  },
+  {
+    "id": "convertidor-oxido",
+    "nombre": "Pizarrones - Esmaltes Sintéticos",
+    "categoria": "esmaltes",
+    "descripcion_corta": "Convertidor de óxido para metales corroídos",
+    "descripcion_larga": "Pintura elaborada a base de resinas sintéticas que proporcionan un acabado mate, de alto poder cubritivo y alta adherencia. Formulado especialmente para receptar escrituras, manteniendo gran resistencia al desgaste.",
+    "ficha_tecnica": "",
+    "imagen": "/products/esmaltes/ESM. PIZARRON.jpeg"
+  },
+  {
+    "id": "pintura-industrial",
+    "nombre": "Colmenas - Esmalte Sintético",
+    "categoria": "industrial",
+    "descripcion_corta": "Pintura de alta resistencia para aplicaciones industriales",
+    "descripcion_larga": "Es un producto elaborado en base a resinas alquídicas, de máxima resistencia a la intemperie. Es de fácil aplicación, óptimo secado y muy buen brillo. Ideal para pintar objetos a los que se quiera dar la máxima protección y el más perfecto acabado.",
+    "ficha_tecnica": "",
+    "imagen": "/products/industrial/colmena.jpeg"
+  },
+  {
+    "id": "anticorrosivo",
+    "nombre": "Convertidor y Antióxido",
+    "categoria": "industrial",
+    "descripcion_corta": "Convertidor de óxido que transforma el óxido en una capa protectora inerte",
+    "descripcion_larga": "Convertidor de óxido que transforma mediante reacción química el óxido en una capa protectora inerte, eliminando definitivamente la acción corrosiva. Apto para aplicar sobre superficies de hierro a las que les forma una película dura y de excelente adherencia, que evita, convierte y estabiliza la oxidación.",
+    "ficha_tecnica": "",
+    "imagen": "/products/industrial/Convertidor.jpeg"
+  },
+  {
+    "id": "pintura-alta-temp",
+    "nombre": "Esmalte para Máquinas Agrícolas",
+    "categoria": "industrial",
+    "descripcion_corta": "Esmalte resistente a altas temperaturas para maquinaria agrícola",
+    "descripcion_larga": "Esmalte sintético elaborado con resinas sintéticas del tipo 'Alkyd' y pigmentos de alta calidad. Su composición asegura gran resistencia a la intemperie, la abrasión, el manoseo y los lavados. Su color depende de la pigmentación del esmalte.",
+    "ficha_tecnica": "",
+    "imagen": "/products/industrial/ESM. AGRICOLA.jpeg"
+  },
+  {
+    "id": "entonador-universal",
+    "nombre": "Entonadores para Pintura Base Acuosa",
+    "categoria": "entonadores",
+    "descripcion_corta": "Concentrado de pigmentos para entonar pinturas al látex",
+    "descripcion_larga": "Concentrado de pigmentos finamente molidos en solución acuosa; ideales para entonar pinturas al Látex.",
+    "ficha_tecnica": "",
+    "imagen": "/products/entonadores/BASE ACUOSA.jpeg"
+  },
+  {
+    "id": "tinta-madera",
+    "nombre": "Entonador Universal para Barnices (Exterior - Interior)",
+    "categoria": "entonadores",
+    "descripcion_corta": "Concentrado de pigmentos para entonar barnices al agua y solventes",
+    "descripcion_larga": "Concentrado de pigmentos, finamente dispersos, en base universal; ideal para entonar barnices acuosos y solventes.",
+    "ficha_tecnica": "",
+    "imagen": "/products/entonadores/ENTONADOR PARA MADERA.jpeg"
+  },
+  {
+    "id": "barniz-marino",
+    "nombre": "Barniz Marino",
+    "categoria": "maderas",
+    "descripcion_corta": "Máxima protección contra agua y sol",
+    "descripcion_larga": "Barniz elaborado en base a resinas poliéster modificadas y compuestos químicos especiales que actúan como barreras, protegiendo a la madera y a la película de barniz de la acción destructiva de los agentes externos. Las características especiales de este barniz le permiten cumplir con las severas exigencias de los ambientes marinos y además cubrir las necesidades de protección y embellecimiento de maderas de uso exterior e interior.",
+    "ficha_tecnica": "",
+    "imagen": "/products/maderas/BARNIZ BTE.jpeg"
+  },
+  {
+    "id": "barniz-interior",
+    "nombre": "Impregnante Para Madera de Acción Múltiple Satinado",
+    "categoria": "maderas",
+    "descripcion_corta": "Protección integral para maderas interiores y exteriores",
+    "descripcion_larga": "Producto elaborado a base de resinas alquídicas, ceras, absorbedores de UV, pigmentos, fungicidas, bactericidas, etc., que preserva integralmente la madera, tanto en exteriores como en interiores resaltando su belleza y aspecto natural. Trabaja como impregnante de acción múltiple, pues actúa como curador, sellador y lasur.",
+    "ficha_tecnica": "",
+    "imagen": "/products/maderas/impreg_nogal.jpeg"
+  },
+  {
+    "id": "lasur",
+    "nombre": "Laca Universal - DECK Brillante",
+    "categoria": "maderas",
+    "descripcion_corta": "Laca de alto brillo con protección UV para maderas exteriores",
+    "descripcion_larga": "Laca Universal - Deck Brillante elaborado en base a resinas poliéster uretanadas y compuestos químicos especiales que actúan como filtros solares, protegiendo a la madera de la acción destructiva de la radiación ultravioleta. Formada con doble filtro solar y estabilizadores ópticos.",
+    "ficha_tecnica": "",
+    "imagen": "/products/maderas/LACA UNIVERSAL.jpeg"
+  },
+  {
+    "id": "poliuretano",
+    "nombre": "Pintura Epoxi (Dos Componentes)",
+    "categoria": "epoxi_poliuretanos",
+    "descripcion_corta": "Pintura epoxídica de dos componentes para uso interior",
+    "descripcion_larga": "Pintura epoxídica que contiene solventes, para uso interior. Viene predosificada en dos componentes listos para mezclar.",
+    "ficha_tecnica": "",
+    "imagen": "/products/epoxi_poliuretanos/EPOXI DOS COMP.jpeg"
+  },
+  {
+    "id": "epoxi-piletas",
+    "nombre": "Esmalte Poliuretánico 2K (Dos Componentes)",
+    "categoria": "epoxi_poliuretanos",
+    "descripcion_corta": "Esmalte de dos componentes para piletas y superficies expuestas al agua",
+    "descripcion_larga": "Esmalte de dos componentes utilizado para la terminación de superficies proporcionando resistencia, elasticidad y dureza a los agentes atmosféricos, abrasión y rayado.",
+    "ficha_tecnica": "",
+    "imagen": "/products/epoxi_poliuretanos/esm_poliuretanico2k.jpeg"
+  },
+  {
+    "id": "fondo-blanco",
+    "nombre": "Fondo Antióxido Industrial",
+    "categoria": "fondos",
+    "descripcion_corta": "Pintura de fondo para protección anticorrosiva de metales",
+    "descripcion_larga": "Pintura formulada a base de mezclas equilibradas de resinas sintéticas y pigmentos anticorrosivos que impiden o detienen la oxidación de superficies ferrosas.",
+    "ficha_tecnica": "",
+    "imagen": "/products/fondos/antioxido.jpeg"
+  },
+  {
+    "id": "fijador-sellador",
+    "nombre": "Triple Acción (Esmalte - Antióxido - Convertidor)",
+    "categoria": "fondos",
+    "descripcion_corta": "Esmalte que convierte el óxido en una capa protectora inerte",
+    "descripcion_larga": "Esmalte cuya formulación transforma, mediante reacción química, el óxido en una capa protectora inerte. Cumple con las siguientes funciones principales: Esmalte-antióxido-convertidor. Apto para aplicar en superficies de hierro, generándose una película dura y de excelente adherencia. Decora, protege, evita, convierte y estabiliza la oxidación.",
+    "ficha_tecnica": "",
+    "imagen": "/products/fondos/Convertidor.jpeg"
+  },
+  {
+    "id": "fondo-anticorrosivo",
+    "nombre": "Fondo Convertidor y Antióxidoo",
+    "categoria": "fondos",
+    "descripcion_corta": "Convertidor de óxido que transforma el óxido en una capa protectora inerte",
+    "descripcion_larga": "Convertidor de óxido que transforma mediante reacción química el óxido en una capa protectora inerte, eliminando definitivamente la acción corrosiva. Apto para aplicar sobre superficies de hierro a las que les forma una película dura y de excelente adherencia, que evita, convierte y estabiliza la oxidación.",
+    "ficha_tecnica": "",
+    "imagen": "/products/fondos/TRIPLE ACC BLANCO..jpeg"
+  },
+  {
+    "id": "diluyente-sintetico",
+    "nombre": "Diluyente para Poliuretano Fadepa 2K",
+    "categoria": "diluyentes",
+    "descripcion_corta": "Diluyente específico para pinturas poliuretánicas de dos componentes",
+    "descripcion_larga": "Diluyente mezcla de hidrocarburos aromáticos y oxigenados con carbonato de metilo.",
+    "ficha_tecnica": "",
+    "imagen": "/products/diluyentes/diluyente poliuretanico.jpeg"
+  },
+  {
+    "id": "base-tintometrica",
+    "nombre": "Tintas Sistema Color (Colorantes para Máquina Tintométrica)a",
+    "categoria": "tintometricos",
+    "descripcion_corta": "Tinta universal para sistemas de dosificación en máquinas tintométricas",
+    "descripcion_larga": "Tinta Universal para sistemas Acuosos y Alquídicos para dosificación en máquinas dispensadoras en puntos de ventas.",
+    "ficha_tecnica": "",
+    "imagen": "/products/tintometricos/base_latex_opt.jpeg"
+  },
+  {
+    "id": "colorante-tinto",
+    "nombre": "Base Tintométrica Látex (Interior - Exterior)s",
+    "categoria": "tintometricos",
+    "descripcion_corta": "Tinta para entonar pinturas látex en máquinas tintométricas",
+    "descripcion_larga": "Pintura a base de polímeros en emulsión blanca acuosa, que proporciona un recubrimiento plástico de acabado mate aterciopelado sin tack residual. En su composición intervienen resinas acrílicas y pigmentos que le otorgan máxima resistencia a la intemperie y agentes atmosféricos.",
+    "ficha_tecnica": "",
+    "imagen": "/products/tintometricos/TINTAS COLOR.jpeg"
+  },
+  {
+    "id": "texturado-fino",
+    "nombre": "Revestimiento Acrilico Texturado Impermeable",
+    "categoria": "revestimientos_texturados",
+    "descripcion_corta": "Acabado mate texturado e impermeable para paredes",
+    "descripcion_larga": "Revestimiento para paredes (interior y exterior) a base de polímeros acrílicos, cuarzo molido, pigmentos y aditivos en dispersión acuosa que proporciona un acabado mate texturado e impermeable de gran resistencia a la intemperie y a los agentes atmosféricos. Se presenta en tres texturas: Extra Fino, Fino y Mediano. Las dos últimas especialmente formuladas para realizar las terminaciones rulado o travertino.",
+    "ficha_tecnica": "",
+    "imagen": "/products/revestimientos_texturados/REVESTIMIENTO TEXTURADO.jpeg"
+  },
+  {
+    "id": "texturado-grueso",
+    "nombre": "Revestimiento Acrílico Texturado Impermeable Paris Piedra",
+    "categoria": "revestimientos_texturados",
+    "descripcion_corta": "Acabado mate texturado e impermeable con aspecto de piedra para paredes",
+    "descripcion_larga": "Revestimiento para paredes (interior y exterior) a base de polímeros acrílicos, cuarzo molido, piedras naturales, pigmentos y aditivos en dispersión acuosa que proporciona un acabado mate texturado e impermeable de gran resistencia a la intemperie y a los agentes atmosféricos. Se presenta en textura Fina.",
+    "ficha_tecnica": "",
+    "imagen": "/products/revestimientos_texturados/PIEDRA PARIS.jpeg"
+  },
+  {
+    "id": "revestimiento-acrilico",
+    "nombre": "Base Niveladora",
+    "categoria": "revestimientos_texturados",
+    "descripcion_corta": "Producto nivelador para superficies irregulares antes de aplicar revestimientos texturados",
+    "descripcion_larga": "Es un producto a base de cargas minerales combinado con polímeros acrílicos que lo hacen totalmente compatible con cemento Pórtland. Especialmente diseñado para aplicar en superficies irregulares, de uso interior y exterior, para nivelar y luego revestir.",
+    "ficha_tecnica": "",
+    "imagen": "/products/revestimientos_texturados/Base Niveladora.jpeg"
+  },
+  {
+    "id": "pintura-pileta-agua",
+    "nombre": "Piletas de Natación (Acrílico Base Acuosa)",
+    "categoria": "pintura_piletas",
+    "descripcion_corta": "Pintura acrílica curable por ultra violeta para piletas de natación",
+    "descripcion_larga": "Pintura especial 100% acrílico curable por ultra violeta (Base Acuosa) para piletas de natación, a las cuales decora y protege.",
+    "ficha_tecnica": "",
+    "imagen": "/products/pintura_piletas/NATACION.jpeg"
+  },
+  {
+    "id": "pintura-pileta-caucho",
+    "nombre": "Recubrimiento Para Piscina Plástico (Fibra) y Cemento",
+    "categoria": "pintura_piletas",
+    "descripcion_corta": "Pintura impermeabilizante de gran adherencia para piscinas plásticas, de fibra de vidrio y cemento",
+    "descripcion_larga": "Pintura formulada con acrílico base solvente monocomponente para proporcionar un recubrimiento impermeabilizante, de gran adherencia y protección a la superficie de piscinas plásticas o de fibra de vidrio y cemento.",
+    "ficha_tecnica": "",
+    "imagen": "/products/pintura_piletas/PISC BASE fibra y hormigon.jpeg"
+  },
+  {
+    "id": "piso-cemento",
+    "nombre": "Cubierta para Pisos Deportivos y Chapas Galvanizadas",
+    "categoria": "pintura_pisos",
+    "descripcion_corta": "Pintura de alta resistencia para pisos deportivos y chapas galvanizadas",
+    "descripcion_larga": "Pintura elaborada a base de polímeros en dispersión acuosa, para chapa galvanizada y piso deportivo, antideslizante de alta resistencia a la abrasión y a la intemperie, que forma una película de óptimo poder cubritivo.",
+    "ficha_tecnica": "",
+    "imagen": "/products/pintura_pisos/piso_deportivo.jpeg"
+  },
+  {
+    "id": "piso-exterior",
+    "nombre": "Demarcación Vial - Alto tránsito",
+    "categoria": "pintura_pisos",
+    "descripcion_corta": "Pintura de alta resistencia para demarcación vial en pavimentos asfálticos o de hormigón",
+    "descripcion_larga": "Pintura base solvente aromática formulada para la demarcación vial sobre pavimentos asfálticos o de hormigón. Posee una elevada resistencia a la intemperie y a la abrasión.",
+    "ficha_tecnica": "",
+    "imagen": "/products/pintura_pisos/demarc_vial.jpEg"
+  },
+  {
+    "id": "mortero-reparacion",
+    "nombre": "Cemento Blanco",
+    "categoria": "morteros",
+    "descripcion_corta": "Mezcla cementicia blanca para aplicaciones estructurales en exteriores",
+    "descripcion_larga": "Mezcla cementicia blanca utilizable para un amplio rango de aplicaciones estructurales en exteriores. Presenta adherencia a mampostería y hormigón. Las paredes deben estar sin pintar. Puede pintarse con látex o sintéticos.",
+    "ficha_tecnica": "",
+    "imagen": "/products/morteros/cemento blanco.jpeg"
+  },
+  {
+    "id": "pegamento-ceramicos",
+    "nombre": "Yeso",
+    "categoria": "morteros",
+    "descripcion_corta": "Mezcla cementicia blanca para aplicaciones en interiores",
+    "descripcion_larga": "Yeso utilizable para un amplio rango de aplicaciones en interiores. Presenta adherencia a yeso. Las paredes deben estar sin pintar. Puede lijarse y pintarse con látex o sintéticos.",
+    "ficha_tecnica": "",
+    "imagen": "/products/morteros/yeso.jpeg"
+  }
+]
