@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Droplets, Shield, Paintbrush, Sparkles } from "lucide-react"
@@ -8,21 +9,25 @@ const features = [
     icon: Droplets,
     title: "Pinturas de Calidad",
     description: "Amplia variedad de pinturas látex, esmaltes y revestimientos de las mejores marcas.",
+    image: "/images/pinturas.jpeg",
   },
   {
     icon: Shield,
     title: "Impermeabilizantes",
     description: "Protección total para techos, paredes y superficies contra la humedad.",
+    image: "/images/impermeabilizantes.jpeg",
   },
   {
     icon: Paintbrush,
     title: "Productos Industriales",
     description: "Soluciones especializadas para proyectos industriales y profesionales.",
+    image: "/images/industriales.jpeg",
   },
   {
     icon: Sparkles,
     title: "Asesoramiento Experto",
     description: "Te ayudamos a elegir el producto ideal para cada proyecto.",
+    image: "/images/asesoramiento.jpeg",
   },
 ]
 
@@ -39,7 +44,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-primary pb-32 pt-16 lg:pb-40 lg:pt-24">
+      <section className="relative overflow-hidden bg-primary pb-16 pt-12 lg:pb-20 lg:pt-16">
         {/* Three diagonal wavy lines from top-right to bottom-left */}
         <svg
           className="absolute inset-0 h-full w-full"
@@ -79,15 +84,15 @@ export default function Home() {
             <h1 className="font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-white drop-shadow-sm sm:text-5xl lg:text-6xl">
               <span className="text-balance">FADEPA Pinturería</span>
             </h1>
-            <p className="mt-6 text-lg font-medium leading-relaxed text-white sm:text-xl">
+            <p className="mt-6 font-[family-name:var(--font-display)] text-xl font-bold leading-snug text-white drop-shadow-md sm:text-2xl lg:text-3xl">
               Soluciones en pinturas, revestimientos y productos para el hogar y la industria
             </p>
-            <p className="mt-4 text-base font-normal leading-relaxed text-white/90">
+            <p className="mt-4 text-base font-medium leading-relaxed text-white drop-shadow-sm sm:text-lg">
               En FADEPA encontrás una amplia gama de productos de pintura, revestimientos, aditivos y soluciones para pintura con excelente atención al cliente en Alta Gracia y alrededores.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link href="/productos">
-                <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90">
+                <Button size="lg" className="cursor-pointer bg-secondary text-white hover:bg-secondary/90">
                   Ver productos
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -101,45 +106,40 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Bottom wave transition */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg
-            className="w-full"
-            viewBox="0 0 1440 120"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0 120L48 108C96 96 192 72 288 60C384 48 480 48 576 54C672 60 768 72 864 78C960 84 1056 84 1152 78C1248 72 1344 60 1392 54L1440 48V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0Z"
-              className="fill-background"
-            />
-          </svg>
-        </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-10 lg:py-14">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               ¿Por qué elegirnos?
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Más de años brindando soluciones en pintura para hogares e industrias
+              Más de 25 años brindando soluciones en pintura para hogares e industrias
             </p>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {features.map((feature) => (
-              <Card key={feature.title} className="border-border bg-card transition-shadow hover:shadow-md">
-                <CardContent className="p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <feature.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="mt-4 font-semibold text-card-foreground">{feature.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
-                </CardContent>
-              </Card>
+              <div
+                key={feature.title}
+                className="group relative h-60 overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 sm:h-68"
+              >
+                {/* Background Image */}
+                <Image
+                  src={feature.image}
+                  alt={feature.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                {/* Dark overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 transition-opacity duration-300 group-hover:from-black/85 group-hover:via-black/50" />
+                {/* Content */}
+                <div className="relative flex h-full flex-col justify-end p-6">
+                  <h3 className="text-lg font-bold text-white drop-shadow-md">{feature.title}</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-white/85 drop-shadow-sm">{feature.description}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>

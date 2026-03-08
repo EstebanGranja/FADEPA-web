@@ -1,32 +1,43 @@
 import { Metadata } from "next"
 import { Card, CardContent } from "@/components/ui/card"
-import { Users, Award, MapPin, Heart } from "lucide-react"
+import { Award, Zap, Layers, Headphones, Truck, Lightbulb, Target, Eye } from "lucide-react"
+import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Nosotros | FADEPA Pinturería",
-  description: "Conocé nuestra historia y compromiso con la calidad en pinturas y revestimientos en Alta Gracia, Córdoba.",
+  title: "Nosotros | FADEPA - Fábrica Argentina de Pinturas y Afines",
+  description: "Conocé la historia de FADEPA S.A., fábrica argentina de pinturas y afines desde 1989 en Villa Nueva, Córdoba.",
 }
 
 const values = [
   {
     icon: Award,
-    title: "Calidad",
-    description: "Trabajamos únicamente con productos de primera calidad de marcas reconocidas.",
+    title: "Excelencia en Productos",
+    description: "Elaboramos productos de primera calidad que cumplen los más altos estándares.",
   },
   {
-    icon: Users,
-    title: "Atención Personalizada",
-    description: "Cada cliente es único y merece un asesoramiento adaptado a sus necesidades.",
+    icon: Zap,
+    title: "Calidad-Precio",
+    description: "Competitividad en la ecuación calidad-precio para cada uno de nuestros productos.",
   },
   {
-    icon: MapPin,
-    title: "Compromiso Local",
-    description: "Orgullosos de servir a Alta Gracia y localidades vecinas desde hace años.",
+    icon: Layers,
+    title: "Línea Completa",
+    description: "Ofrecemos una línea completa de productos para el hogar y la obra.",
   },
   {
-    icon: Heart,
-    title: "Pasión",
-    description: "Amamos lo que hacemos y eso se refleja en cada recomendación que damos.",
+    icon: Headphones,
+    title: "Atención Técnica",
+    description: "Asesoramiento técnico personalizado para cada proyecto y necesidad.",
+  },
+  {
+    icon: Truck,
+    title: "Rápida Entrega",
+    description: "Compromiso con la puntualidad y agilidad en cada despacho.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Innovación Sostenida",
+    description: "Apostamos a la innovación tecnológica de forma continua.",
   },
 ]
 
@@ -37,10 +48,10 @@ export default function NosotrosPage() {
       <section className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Sobre Nosotros
+            Nuestra Empresa
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Somos una pinturería familiar ubicada en el corazón de Alta Gracia, Córdoba, dedicada a brindar las mejores soluciones en pinturas y revestimientos para hogares e industrias.
+            <span className="font-semibold text-foreground">FADEPA S.A.</span> — Fábrica Argentina de Pinturas y Afines. Desde 1989 elaboramos pinturas de calidad en Villa Nueva, Córdoba, para hogares y obras de todo el país.
           </p>
         </div>
       </section>
@@ -55,25 +66,28 @@ export default function NosotrosPage() {
               </h2>
               <div className="mt-6 space-y-4 text-muted-foreground">
                 <p className="leading-relaxed">
-                  FADEPA nació con la visión de ofrecer productos de pintura de alta calidad junto con un servicio de asesoramiento personalizado. Desde nuestros inicios, nos hemos comprometido a entender las necesidades de cada cliente y brindar soluciones efectivas.
+                  FADEPA nace en <span className="font-semibold text-foreground">1989</span>, en la localidad de Villa Nueva, provincia de Córdoba. Se origina como un pequeño emprendimiento que elabora una reducida línea de productos.
                 </p>
                 <p className="leading-relaxed">
-                  A lo largo de los años, hemos crecido junto a la comunidad de Alta Gracia, expandiendo nuestra oferta de productos para incluir desde pinturas tradicionales hasta las últimas innovaciones en revestimientos y productos industriales.
+                  A lo largo de más de tres décadas de trayectoria, la empresa ha desarrollado un crecimiento continuo y sólido, incorporando artículos hasta ofrecer una línea completa de productos que satisfacen todas las necesidades del hogar y de la obra.
                 </p>
                 <p className="leading-relaxed">
-                  Hoy, FADEPA es sinónimo de confianza y calidad en pinturería, atendiendo tanto a profesionales de la construcción como a particulares que buscan transformar sus espacios.
+                  Hoy, FADEPA S.A. es una alternativa confiable en pinturas, presente en el mercado nacional por su permanencia, calidad, precios competitivos, puntualidad en la entrega y asesoramiento técnico personalizado.
                 </p>
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square overflow-hidden rounded-2xl bg-primary">
-                <div className="flex h-full items-center justify-center">
-                  <div className="text-center">
-                    <span className="font-[family-name:var(--font-display)] text-6xl font-bold text-primary-foreground">FADEPA</span>
-                    <span className="block text-lg tracking-widest text-primary-foreground/80">PINTURAS</span>
-                    <p className="mt-4 text-primary-foreground/70">Alta Gracia, Córdoba</p>
-                  </div>
-                </div>
+              <div className="overflow-hidden rounded-2xl bg-primary">
+                <Image
+                  src="/images/fadepa-logo.jpeg"
+                  alt="FADEPA Pinturas y Afines"
+                  width={600}
+                  height={600}
+                  className="h-72 w-full object-cover sm:h-80 lg:h-96"
+                />
+                <p className="py-3 text-center text-sm text-primary-foreground/80">
+                  Villa Nueva, Córdoba — Desde 1989
+                </p>
               </div>
             </div>
           </div>
@@ -88,10 +102,10 @@ export default function NosotrosPage() {
               Nuestros Valores
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Los principios que guían nuestro trabajo día a día
+              Los pilares que sustentan nuestra presencia en el mercado
             </p>
           </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {values.map((value) => (
               <Card key={value.title} className="border-border bg-card text-center">
                 <CardContent className="p-6">
@@ -107,29 +121,48 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* Mission & Vision Section */}
       <section className="bg-secondary py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight text-secondary-foreground sm:text-3xl">
-              Nuestra Misión
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-secondary-foreground/80">
-              Brindar a nuestros clientes las mejores soluciones en pinturas y revestimientos, combinando productos de calidad superior con un asesoramiento experto y una atención cercana que nos distingue.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-8">
-              <div className="text-center">
-                <span className="font-[family-name:var(--font-display)] text-4xl font-bold text-primary">+500</span>
-                <p className="mt-1 text-sm text-secondary-foreground/70">Productos disponibles</p>
+          <div className="grid gap-12 lg:grid-cols-2">
+            {/* Misión */}
+            <div className="text-center lg:text-left">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 lg:mx-0">
+                <Target className="h-7 w-7 text-primary" />
               </div>
-              <div className="text-center">
-                <span className="font-[family-name:var(--font-display)] text-4xl font-bold text-primary">17</span>
-                <p className="mt-1 text-sm text-secondary-foreground/70">Categorías</p>
+              <h2 className="mt-4 font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight text-secondary-foreground sm:text-3xl">
+                Misión
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-secondary-foreground/80">
+                Trabajar en la superación permanente de todos los aspectos fundamentales para la empresa, apostando a la innovación tecnológica, al crecimiento en el mercado y a la competitividad.
+              </p>
+            </div>
+            {/* Visión */}
+            <div className="text-center lg:text-left">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 lg:mx-0">
+                <Eye className="h-7 w-7 text-primary" />
               </div>
-              <div className="text-center">
-                <span className="font-[family-name:var(--font-display)] text-4xl font-bold text-primary">+1000</span>
-                <p className="mt-1 text-sm text-secondary-foreground/70">Clientes satisfechos</p>
-              </div>
+              <h2 className="mt-4 font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight text-secondary-foreground sm:text-3xl">
+                Visión
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-secondary-foreground/80">
+                Ser una alternativa confiable en pinturas para hogares y obras. FADEPA S.A. — Fábrica Argentina de Pinturas y Afines — presente en el mercado nacional por permanencia, calidad, precios, puntualidad en la entrega y asesoramiento técnico personalizado.
+              </p>
+            </div>
+          </div>
+          {/* Stats */}
+          <div className="mt-12 flex flex-wrap justify-center gap-8 border-t border-secondary-foreground/10 pt-12">
+            <div className="text-center">
+              <span className="font-[family-name:var(--font-display)] text-4xl font-bold text-primary">+35</span>
+              <p className="mt-1 text-sm text-secondary-foreground/70">Años de trayectoria</p>
+            </div>
+            <div className="text-center">
+              <span className="font-[family-name:var(--font-display)] text-4xl font-bold text-primary">Hogar</span>
+              <p className="mt-1 text-sm text-secondary-foreground/70">Línea completa</p>
+            </div>
+            <div className="text-center">
+              <span className="font-[family-name:var(--font-display)] text-4xl font-bold text-primary">Obra</span>
+              <p className="mt-1 text-sm text-secondary-foreground/70">Línea completa</p>
             </div>
           </div>
         </div>
