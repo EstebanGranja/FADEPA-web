@@ -145,39 +145,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Categories Section */}
-      <section className="bg-muted/30 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Nuestras Categorías
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              Explorá nuestro amplio catálogo de productos
-            </p>
-          </div>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-            {categories.map((category) => (
-              <Link key={category.name} href="/productos">
-                <Card className="group cursor-pointer border-border bg-card transition-all hover:shadow-md hover:-translate-y-1">
-                  <CardContent className="p-6 text-center">
-                    <div className={`mx-auto h-16 w-16 rounded-full ${category.color} opacity-80 transition-opacity group-hover:opacity-100`} />
-                    <h3 className="mt-4 font-medium text-card-foreground">{category.name}</h3>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Link href="/productos">
-              <Button variant="outline" size="lg">
-                Ver todas las categorías
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-16 lg:py-24">
