@@ -100,7 +100,7 @@ export function ProductCatalog({ categories }: ProductCatalogProps) {
 
       {/* Category Chips - Mobile */}
       <div className="mt-4 flex flex-wrap gap-2 sm:hidden">
-        {categories.map((category) => (
+        {categories.slice(0, 5).map((category) => (
           <Button
             key={category.id}
             variant={selectedCategory === category.id ? "default" : "outline"}

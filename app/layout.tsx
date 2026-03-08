@@ -15,26 +15,17 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'FADEPA Pinturería | Pinturas y Revestimientos en Alta Gracia',
+  title: 'FADEPA Pinturería',
   description: 'FADEPA es una pinturería ubicada en Alta Gracia que ofrece una amplia gama de productos de pintura, revestimientos, aditivos y soluciones para el hogar e industria.',
   generator: 'v0.app',
   keywords: ['pintura', 'pinturería', 'Alta Gracia', 'Córdoba', 'revestimientos', 'látex', 'esmaltes', 'impermeabilizantes'],
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/fadepa-logo-header-32x32.png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/fadepa-logo-header-32x32.png',
   },
 }
 
