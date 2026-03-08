@@ -19,7 +19,7 @@ export function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#019191] shadow-[0_4px_16px_rgba(0,0,0,0.25)]">
+    <header className="sticky top-0 z-50 w-full bg-[#019292] shadow-[0_4px_16px_rgba(0,0,0,0.25)]">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1 lg:px-8 lg:py-1">
         <div className="flex lg:flex-1">
           <Link href="/" className="block">
@@ -81,7 +81,7 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="lg:hidden">
           <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
-          <div className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-[#019991] px-6 py-6 shadow-lg">
+          <div className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-[#019292] px-6 py-6 shadow-lg">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
                 <Image
