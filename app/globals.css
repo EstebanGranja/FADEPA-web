@@ -3,6 +3,21 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@media (min-width: 640px) {
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
+/* Radix UI adds padding-right to body when locking scroll to compensate for
+   scrollbar removal. With scrollbar-gutter:stable this is already handled,
+   and on mobile overlay scrollbars take no space — so reset it to prevent
+   the layout shift / rightward push when a Dialog opens. */
+body[data-scroll-locked] {
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
 button, a, [role="button"] {
   cursor: pointer;
 }

@@ -151,9 +151,9 @@ export default function ContactoPage() {
           </p>
           <div className="mt-6 overflow-hidden rounded-xl border border-border">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.2!2d-64.4297!3d-31.6697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d7de5bcb70f9f%3A0x4ccfe0f0f0f0f0f0!2sAv.%20Hip%C3%B3lito%20Yrigoyen%201200%2C%20Alta%20Gracia%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2sar!4v1699999999999!5m2!1ses!2sar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.2!2d-64.4297!3d-31.6697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d7de5bcb70f9f%3A0x4ccfe0f0f0f0f0!2sAv.%20Hip%C3%B3lito%20Yrigoyen%201200%2C%20Alta%20Gracia%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2ar!4v1699999999999!5m2!1ses!2ar"
               width="100%"
-              height="450"
+              height="260"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"

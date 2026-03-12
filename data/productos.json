@@ -1,32 +1,5 @@
 [
   {
-    "id": "latizador",
-    "nombre": "Latizador",
-    "categoria": "aditivos",
-    "descripcion_corta": "Fijador para pintura a la cal",
-    "descripcion_larga": "Es una dispersión acuosa de un polímero de alta calidad que agregado a la pintura a la cal mejora su viscosidad evitando el descuelgue, mejorando la adherencia y disminuyendo el entizado.",
-    "ficha_tecnica": "",
-    "imagen": "/products/aditivos/LATIZADOR.jpeg"
-  },
-  {
-    "id": "antihongo",
-    "nombre": "Antihongo - Antialga Concentrado",
-    "categoria": "aditivos",
-    "descripcion_corta": "Previene la aparición de hongos y algas en superficies pintadas",
-    "descripcion_larga": "Es un producto especialmente desarrollado para garantizar efectiva protección de film seco en revestimientos internos y externos contra el ataque microbiológico de algas, hongos y levaduras. Está exento de formaldehído, fenoles y metales pesados como el Mercurio y el Plomo. Posee excelente compatibilidad y estabilidad a rayos UV, no causando amarillamiento de la pintura.",
-    "ficha_tecnica": "",
-    "imagen": "/products/aditivos/ANTIHONGO.jpeg"
-  },
-  {
-    "id": "mateante",
-    "nombre": "Mateante para Esmaltes Sintéticos y Barnices",
-    "categoria": "aditivos",
-    "descripcion_corta": "Reduce el brillo de esmaltes y barnices",
-    "descripcion_larga": "Aditivo para esmaltes y barnices brillantes a base de ceras de poliester en solvente; que disminuye el brillo.",
-    "ficha_tecnica": "",
-    "imagen": "/products/aditivos/MATEANTE.jpeg"
-  },
-  {
     "id": "latex-interior",
     "nombre": "Profesional Interior",
     "categoria": "latex",
@@ -52,15 +25,6 @@
     "descripcion_larga": "Pintura de buen poder cubritivo elaborada a base de polímeros acrílicos en dispersión acuosa, que proporciona un recubrimiento elastomérico de acabado Satinado, super lavable. Formulada especialmente para decorar e impermeabilizar paredes interiores y exteriores.",
     "ficha_tecnica": "",
     "imagen": "/products/latex/SATINADO.jpeg"
-  },
-  {
-    "id": "cal-apagada",
-    "nombre": "Pintura a la Cal en Pasta",
-    "categoria": "pintura_cal",
-    "descripcion_corta": "Producto en suspensión acuosa fácil de diluir, a base de Hidróxido de Calcio con altos contenidos de Hidróxido de Magnesio y pigmentos de primera calidad. Está indicada para decorar paredes nuevas, revoques finos o gruesos, que no hayan sido curados con otros recubrimientos.",
-    "descripcion_larga": "Producto en suspensión acuosa fácil de diluir, a base de Hidróxido de Calcio con altos contenidos de Hidróxido de Magnesio y pigmentos de primera calidad. Está indicada para decorar paredes nuevas, revoques finos o gruesos, que no hayan sido curados con otros recubrimientos.",
-    "ficha_tecnica": "",
-    "imagen": "/products/pintura_cal/PINT. A LA CAL.jpg"
   },
   {
     "id": "membrana-liquida",
@@ -117,6 +81,33 @@
     "imagen": "/products/esmaltes/ESM. PIZARRON.jpeg"
   },
   {
+    "id": "latizador",
+    "nombre": "Latizador",
+    "categoria": "aditivos",
+    "descripcion_corta": "Fijador para pintura a la cal",
+    "descripcion_larga": "Es una dispersión acuosa de un polímero de alta calidad que agregado a la pintura a la cal mejora su viscosidad evitando el descuelgue, mejorando la adherencia y disminuyendo el entizado.",
+    "ficha_tecnica": "",
+    "imagen": "/products/aditivos/LATIZADOR.jpeg"
+  },
+  {
+    "id": "antihongo",
+    "nombre": "Antihongo - Antialga Concentrado",
+    "categoria": "aditivos",
+    "descripcion_corta": "Previene la aparición de hongos y algas en superficies pintadas",
+    "descripcion_larga": "Es un producto especialmente desarrollado para garantizar efectiva protección de film seco en revestimientos internos y externos contra el ataque microbiológico de algas, hongos y levaduras. Está exento de formaldehído, fenoles y metales pesados como el Mercurio y el Plomo. Posee excelente compatibilidad y estabilidad a rayos UV, no causando amarillamiento de la pintura.",
+    "ficha_tecnica": "",
+    "imagen": "/products/aditivos/ANTIHONGO.jpeg"
+  },
+  {
+    "id": "mateante",
+    "nombre": "Mateante para Esmaltes Sintéticos y Barnices",
+    "categoria": "aditivos",
+    "descripcion_corta": "Reduce el brillo de esmaltes y barnices",
+    "descripcion_larga": "Aditivo para esmaltes y barnices brillantes a base de ceras de poliester en solvente; que disminuye el brillo.",
+    "ficha_tecnica": "",
+    "imagen": "/products/aditivos/MATEANTE.jpeg"
+  },
+  {
     "id": "pintura-industrial",
     "nombre": "Colmenas - Esmalte Sintético",
     "categoria": "industrial",
@@ -142,6 +133,15 @@
     "descripcion_larga": "Esmalte sintético elaborado con resinas sintéticas del tipo 'Alkyd' y pigmentos de alta calidad. Su composición asegura gran resistencia a la intemperie, la abrasión, el manoseo y los lavados. Su color depende de la pigmentación del esmalte.",
     "ficha_tecnica": "",
     "imagen": "/products/industrial/ESM. AGRICOLA.jpeg"
+  },
+  {
+    "id": "cal-apagada",
+    "nombre": "Pintura a la Cal en Pasta",
+    "categoria": "pintura_cal",
+    "descripcion_corta": "Producto en suspensión acuosa fácil de diluir, a base de Hidróxido de Calcio con altos contenidos de Hidróxido de Magnesio y pigmentos de primera calidad. Está indicada para decorar paredes nuevas, revoques finos o gruesos, que no hayan sido curados con otros recubrimientos.",
+    "descripcion_larga": "Producto en suspensión acuosa fácil de diluir, a base de Hidróxido de Calcio con altos contenidos de Hidróxido de Magnesio y pigmentos de primera calidad. Está indicada para decorar paredes nuevas, revoques finos o gruesos, que no hayan sido curados con otros recubrimientos.",
+    "ficha_tecnica": "",
+    "imagen": "/products/pintura_cal/PINT. A LA CAL.jpg"
   },
   {
     "id": "entonador-universal",

@@ -54,38 +54,40 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Navigation */}
-          <div>
-            <h3 className="mb-4 text-sm font-semibold text-secondary-foreground">Navegación</h3>
-            <ul className="space-y-3">
-              {navigation.map((item) => (
-                <li key={item.name}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-secondary-foreground/70 transition-colors hover:text-primary"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Categories */}
-          <div>
-            <h3 className="mb-4 text-sm font-semibold text-secondary-foreground">Categorías</h3>
-            <ul className="space-y-3">
-              {categories.map((category) => (
-                <li key={category}>
-                  <Link
-                    href="/productos"
-                    className="text-sm text-secondary-foreground/70 transition-colors hover:text-primary"
-                  >
-                    {category}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* Navigation & Categories Wrapper - Side by side on mobile, separate on desktop */}
+          <div className="flex flex-row gap-8 md:contents">
+            {/* Navigation */}
+            <div className="flex-1 md:flex-none">
+              <h3 className="mb-4 text-sm font-semibold text-secondary-foreground">Navegación</h3>
+              <ul className="space-y-3">
+                {navigation.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm text-secondary-foreground/70 transition-colors hover:text-primary"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Categories */}
+            <div className="flex-1 md:flex-none">
+              <h3 className="mb-4 text-sm font-semibold text-secondary-foreground">Categorías</h3>
+              <ul className="space-y-3">
+                {categories.map((category) => (
+                  <li key={category}>
+                    <Link
+                      href="#"
+                      className="text-sm text-secondary-foreground/70 transition-colors hover:text-primary"
+                    >
+                      {category}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Contact */}
@@ -120,11 +122,6 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-secondary-foreground/20 pt-8">
-          <p className="text-center text-sm text-secondary-foreground/60">
-            © {new Date().getFullYear()} FADEPA Pinturería. Todos los derechos reservados.
-          </p>
-        </div>
       </div>
     </footer>
   )

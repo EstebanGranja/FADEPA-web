@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-primary pb-16 pt-12 lg:pb-20 lg:pt-16">
+      <section className="relative overflow-hidden bg-primary min-h-[calc(100vh-4rem)] flex flex-col justify-center py-16 lg:py-24">
         {/* Three diagonal wavy lines from top-right to bottom-left */}
         <svg
           className="absolute inset-0 h-full w-full"
@@ -79,26 +79,39 @@ export default function Home() {
           />
         </svg>
 
-        <div className="relative mx-auto max-w-7xl px-4 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 lg:px-8 w-full">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-white drop-shadow-sm sm:text-5xl lg:text-6xl">
-              <span className="text-balance">FADEPA Pinturería</span>
+            <h1 className="font-[family-name:var(--font-display)] text-5xl font-extrabold tracking-tight text-white drop-shadow-sm sm:text-5xl lg:text-7xl lg:-mt-16 text-center">
+              <span className="text-balance">
+                FADEPA
+                <span className="hidden sm:inline">&nbsp;</span>
+                <br className="block sm:hidden" />
+                Pinturería
+              </span>
             </h1>
-            <p className="mt-6 font-[family-name:var(--font-display)] text-xl font-bold leading-snug text-white drop-shadow-md sm:text-2xl lg:text-3xl">
+            <p className="mt-8 font-[family-name:var(--font-display)] text-xl leading-snug text-white drop-shadow-md sm:text-2xl lg:text-3xl">
               Soluciones en pinturas, revestimientos y productos para el hogar y la industria
             </p>
-            <p className="mt-4 text-base font-medium leading-relaxed text-white drop-shadow-sm sm:text-lg">
-              En FADEPA encontrás una amplia gama de productos de pintura, revestimientos, aditivos y soluciones para pintura con excelente atención al cliente en Alta Gracia y alrededores.
+            <p className="mt-12 text-lg text-white/90 drop-shadow-sm">
+              Nos encontramos en
+              <Link
+                href="https://www.google.com/maps?q=Av.+Hip%C3%B3lito+Yrigoyen+1200,+Alta+Gracia,+C%C3%B3rdoba,+Argentina"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold ml-1"
+              >
+                Av. Hipólito Yrigoyen 1200
+              </Link>
             </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link href="/productos">
-                <Button size="lg" className="cursor-pointer bg-secondary text-white hover:bg-secondary/90">
+                <Button size="lg" className="cursor-pointer bg-secondary text-white hover:bg-secondary/90 py-7 text-lg px-10 min-h-[3.5rem]">
                   Ver productos
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/contacto">
-                <Button size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white/10">
+                <Button size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white/10 py-6 text-lg px-9 min-h-[3rem]">
                   Contactanos
                 </Button>
               </Link>
@@ -141,6 +154,11 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-12 text-center">
+            <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground lg:text-lg">
+              En FADEPA encontrás una amplia gama de productos de pintura, revestimientos, aditivos y soluciones para pintura con excelente atención al cliente en Alta Gracia y alrededores.
+            </p>
           </div>
         </div>
       </section>

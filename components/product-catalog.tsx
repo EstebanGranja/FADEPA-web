@@ -63,7 +63,7 @@ export function ProductCatalog({ categories }: ProductCatalogProps) {
   }
 
   return (
-    <div className="mt-12">
+    <div className="mt-12 overflow-x-hidden">
       {/* Filters */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="relative max-w-md flex-1">
@@ -90,26 +90,12 @@ export function ProductCatalog({ categories }: ProductCatalogProps) {
               variant={selectedCategory === category.id ? "default" : "outline"}
               size="sm"
               onClick={() => handleCategoryChange(category.id)}
-              className="hidden sm:inline-flex"
+              className=""
             >
               {category.name}
             </Button>
           ))}
         </div>
-      </div>
-
-      {/* Category Chips - Mobile */}
-      <div className="mt-4 flex flex-wrap gap-2 sm:hidden">
-        {categories.slice(0, 5).map((category) => (
-          <Button
-            key={category.id}
-            variant={selectedCategory === category.id ? "default" : "outline"}
-            size="sm"
-            onClick={() => handleCategoryChange(category.id)}
-          >
-            {category.name}
-          </Button>
-        ))}
       </div>
 
       {/* Categories Grid */}
@@ -120,10 +106,11 @@ export function ProductCatalog({ categories }: ProductCatalogProps) {
 
           return (
             <section key={category.id} id={category.id}>
-              <div className="mb-6">
+              <div className="mb-8 flex items-center gap-4 overflow-hidden">
                 <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold text-foreground">
                   {category.name}
                 </h2>
+                <div className="flex-1 min-w-0 h-[2px] bg-gradient-to-l from-[#00918e] via-[#00918e] to-transparent opacity-60" />
               </div>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {filteredProducts.map((product, index) => (
@@ -163,14 +150,13 @@ export function ProductCatalog({ categories }: ProductCatalogProps) {
 
       {/* Product Detail Modal */}
       <Dialog open={!!selectedProduct} onOpenChange={(open) => !open && setSelectedProduct(null)}>
-        <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-[calc(100%-2rem)] sm:max-w-xl max-h-[92vh] sm:max-h-[85vh] flex flex-col p-5 sm:p-7 gap-0 overflow-hidden">
           {selectedProduct && (
-            <>
-              <DialogHeader>
-                <DialogTitle className="text-xl">{selectedProduct.nombre}</DialogTitle>
-              </DialogHeader>
+            <div className="flex flex-col items-center gap-3 sm:gap-3 min-h-0 w-full overflow-hidden">
+              {/* Imagen centrada */}
               <div
-                className="relative mx-auto w-full max-w-sm aspect-square overflow-hidden rounded-lg bg-muted cursor-zoom-in"
+                className="relative cursor-zoom-in flex-shrink-0 rounded-xl overflow-hidden bg-black"
+                style={{ width: 200, height: 200 }}
                 onClick={() => setFullscreenImage(selectedProduct.imagen)}
               >
                 <Image
@@ -178,13 +164,21 @@ export function ProductCatalog({ categories }: ProductCatalogProps) {
                   alt={selectedProduct.nombre}
                   fill
                   className="object-contain"
-                  sizes="(max-width: 640px) 100vw, 384px"
+                  sizes="200px"
                 />
               </div>
-              <DialogDescription className="text-sm leading-relaxed whitespace-pre-line">
-                {selectedProduct.descripcion_larga}
-              </DialogDescription>
-              <div className="flex items-center justify-between pt-2">
+              <div className="flex flex-col items-center w-full">
+                <DialogTitle className="mt-2 sm:mt-2 text-base sm:text-xl font-bold text-center leading-snug">
+                  {selectedProduct.nombre}
+                </DialogTitle>
+                <div className="mt-1 h-[2px] w-[80%] max-w-xs bg-gradient-to-l from-[#1a8a84] via-[#1a8a84] to-transparent opacity-70 rounded-full" />
+              </div>
+              <div className="w-full overflow-y-auto flex-1 min-h-0">
+                <DialogDescription className="text-sm sm:text-base leading-relaxed whitespace-pre-line text-center px-1">
+                  {selectedProduct.descripcion_larga}
+                </DialogDescription>
+              </div>
+              <div className="flex items-center justify-between w-full pt-4 border-t flex-shrink-0">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <FileText className="h-4 w-4" />
                   <span className="text-sm cursor-default">Ficha técnica</span>
@@ -193,7 +187,7 @@ export function ProductCatalog({ categories }: ProductCatalogProps) {
                   Cerrar
                 </Button>
               </div>
-            </>
+            </div>
           )}
         </DialogContent>
       </Dialog>
@@ -238,7 +232,7 @@ function ProductCard({ product, onClick, index = 0 }: { product: Product; onClic
             src={product.imagen}
             alt={product.nombre}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-300 group-hover:scale-110"
             sizes="112px"
           />
         </div>
